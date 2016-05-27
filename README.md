@@ -2,9 +2,12 @@
 
 A tiny tool that allows to bootstrap localizations using GoogleTranslate.
 
+![savedo-localizer demo GIF](https://github.com/Savedo/savedo-localizer/blob/master/pics/demo.gif)
+
+
 ## Installation
 
-Make sure you have [Crystal installed](http://crystal-lang.org/docs/installation/)
+Make sure you have [Crystal installed](http://crystal-lang.org/docs/installation/).
 
 Install dependencies:
 ```
