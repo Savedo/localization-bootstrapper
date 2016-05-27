@@ -1,30 +1,34 @@
-# localizer
+# Savedo Localizer
 
-TODO: Write a description here
+A tiny tool that allows to bootstrap localizations using GoogleTranslate.
 
 ## Installation
 
+Make sure you have [Crystal installed](http://crystal-lang.org/docs/installation/)
 
-TODO: Write installation instructions here
+Install dependencies:
+```
+crystal deps
+```
 
+Build it:
+
+```
+make
+```
+
+Check it:
+```
+./bin/savedo-localizer --help
+```
 
 ## Usage
 
+Translate English texts from `en.json` file to German and save it in `de.json`:
 
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/greyblake/localizer/fork )
-2. Create your feature branch (git checkout -b my-new-feature)
-3. Commit your changes (git commit -am 'Add some feature')
-4. Push to the branch (git push origin my-new-feature)
-5. Create a new Pull Request
+```
+savedo-localizer --from en --to de --input ./en.json --output ./de.json
+```
 
 ## Contributors
 

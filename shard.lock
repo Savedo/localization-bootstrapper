@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  google_translate:
+    github: greyblake/crystal-google_translate
+    version: 0.1.0
+

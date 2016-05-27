@@ -5,3 +5,7 @@ authors:
   - Sergey Potapov <blake131313@gmail.com>
 
 license: MIT
+
+dependencies:
+  google_translate:
+    github: greyblake/crystal-google_translate
