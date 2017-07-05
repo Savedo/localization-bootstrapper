@@ -1,4 +1,4 @@
-module SavedoLocalizer
+module LocalizationBootstrapper
   class JsonFormat
     def parse(input_file : String)
       input = JSON.parse(File.read(input_file))

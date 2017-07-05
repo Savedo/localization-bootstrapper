@@ -1,12 +1,11 @@
 CRYSTAL_BIN ?= $(shell which crystal)
-LOCALIZER_BIN ?= $(shell which savedo-localizer)
+APP_BIN ?= $(shell which localization-bootstrapper)
 
 build:
-	$(CRYSTAL_BIN) build --release -o bin/savedo-localizer ./bin/savedo-localizer.cr $(CRFLAGS)
+	$(CRYSTAL_BIN) build --release -o bin/localization-bootstrapper ./bin/localization-bootstrapper.cr $(CRFLAGS)
 clean:
 	rm -f ./bin/savedo-localizer
 test: build
 	$(CRYSTAL_BIN) spec
 reinstall: build
-	cp ./bin/savedo-localizer $(LOCALIZER_BIN) -rf
-
+	cp ./bin/savedo-localizer $(APP_BIN) -rf

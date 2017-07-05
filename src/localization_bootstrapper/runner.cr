@@ -1,4 +1,4 @@
-module SavedoLocalizer
+module LocalizationBootstrapper
   class Runner
     @from_lang : String
     @to_lang : String

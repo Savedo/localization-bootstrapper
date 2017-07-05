@@ -1,4 +1,4 @@
-module SavedoLocalizer
+module LocalizationBootstrapper
   class Config
     property :from_lang, :to_lang, :input_file, :output_file
 
