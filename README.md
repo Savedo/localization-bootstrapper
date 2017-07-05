@@ -2,7 +2,7 @@
 
 A tiny tool that allows to bootstrap localizations using GoogleTranslate.
 
-![savedo-localizer demo GIF](https://github.com/Savedo/savedo-localizer/blob/master/pics/demo.gif)
+![localization-bootstrapper demo GIF](https://github.com/Savedo/localization-bootstrapper/blob/master/pics/demo.gif)
 
 
 ## Installation
@@ -22,7 +22,7 @@ make
 
 Check it:
 ```
-./bin/savedo-localizer --help
+./bin/localization-bootstrapper --help
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ Check it:
 Translate English texts from `en.json` file to German and save it in `de.json`:
 
 ```
-savedo-localizer --from en --to de --input ./en.json --output ./de.json
+localization-bootstrapper --from en --to de --input ./en.json --output ./de.json
 ```
 
 ## Contributors

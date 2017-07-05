@@ -1,7 +1,7 @@
-require "../src/savedo_localizer"
+require "../src/localization_bootstrapper"
 require "option_parser"
 
-config = SavedoLocalizer::Config.new
+config = LocalizationBootstrapper::Config.new
 
 OptionParser.parse! do |parser|
   parser.banner = "Usage: savedo-localizer OPTIONS"
@@ -28,7 +28,7 @@ OptionParser.parse! do |parser|
   end
 
   parser.on("-v", "--version", "Show version") do
-    puts SavedoLocalizer::VERSION
+    puts LocalizationBootstrapper::VERSION
     exit 0
   end
 end
@@ -39,4 +39,4 @@ abort("--to option must be specified") if config.to_lang.empty?
 abort("--input option must be specified") if config.input_file.empty?
 abort("--output option must be specified") if config.output_file.empty?
 
-SavedoLocalizer::Runner.new(config).run
+LocalizationBootstrapper::Runner.new(config).run

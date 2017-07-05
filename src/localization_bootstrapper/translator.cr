@@ -1,4 +1,4 @@
-module SavedoLocalizer
+module LocalizationBootstrapper
   class Translator
     def initialize(@from_lang : String, @to_lang : String)
       @google_translate = GoogleTranslate::Client.new
