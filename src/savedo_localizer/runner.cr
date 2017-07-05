@@ -22,7 +22,7 @@ module SavedoLocalizer
 
       total = input_translations.size
 
-      input_translations.each_with_index do |key, source_text, index|
+      input_translations.each_with_index do |(key, source_text), index|
         # Sleep for a while to prevent GoogleTranslate blocking
         sleep 1
 
