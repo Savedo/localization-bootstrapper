@@ -1,4 +1,4 @@
-# Savedo Localizer
+# Localization Bootstrapper
 
 A tiny tool that allows to bootstrap localizations using GoogleTranslate.
 
